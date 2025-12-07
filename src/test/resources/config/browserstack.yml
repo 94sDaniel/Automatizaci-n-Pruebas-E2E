@@ -1,0 +1,14 @@
+userName: "danielsierra_zke3mV"
+accessKey: "7pmSGNTojScBPxi3eRUy"
+appUrl: ""
+project: "OrangeHRM Automation"
+build: "BrowserStack-Serenity"
+sessionName: "OrangeHRM UI Flow"
+local: false
+browser: "Chrome"
+browserVersion: "latest"
+os: "Windows"
+osVersion: "11"
+resolution: "1920x1080"
+metadata:
+  tags: ["serenity", "screenplay", "orangehrm"]

@@ -1,0 +1,9 @@
+jira:
+  url: "https://your-domain.atlassian.net"
+  projectKey: "OHRM"
+  username: "${JIRA_USERNAME}"
+  apiToken: "${JIRA_API_TOKEN}"
+  issueType: "Bug"
+  labels:
+    - automation
+    - orangehrm
