@@ -1,6 +1,7 @@
 package com.orangehrm.automation.tasks;
 
 import com.orangehrm.automation.commons.Credentials;
+import com.orangehrm.automation.ui.DashboardPage;
 import com.orangehrm.automation.ui.LoginPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -30,7 +31,8 @@ public class Login implements Task {
                 WaitUntil.the(LoginPage.USERNAME, isVisible()),
                 Enter.theValue(credentials.username()).into(LoginPage.USERNAME),
                 Enter.theValue(credentials.password()).into(LoginPage.PASSWORD),
-                Click.on(LoginPage.LOGIN_BUTTON)
+                Click.on(LoginPage.LOGIN_BUTTON),
+                WaitUntil.the(DashboardPage.DASHBOARD_TITLE, isVisible()).forNoMoreThan(15).seconds()
         );
     }
 }

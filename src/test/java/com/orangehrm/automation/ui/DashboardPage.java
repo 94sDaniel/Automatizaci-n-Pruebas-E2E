@@ -10,4 +10,6 @@ public class DashboardPage {
             .located(By.xpath("//span[normalize-space()='Directory']"));
     public static final Target USER_MENU = Target.the("menú de usuario")
             .located(By.cssSelector(".oxd-userdropdown-name"));
+    public static final Target DASHBOARD_TITLE = Target.the("Título del Dashboard")
+            .located(By.xpath("//h6[normalize-space()='Dashboard']"));
 }

@@ -18,7 +18,7 @@ public class NavigateToPim implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                WaitUntil.the(DashboardPage.PIM_MENU, isClickable()),
+                WaitUntil.the(DashboardPage.PIM_MENU, isClickable()).forNoMoreThan(15).seconds(),
                 Click.on(DashboardPage.PIM_MENU)
         );
     }
